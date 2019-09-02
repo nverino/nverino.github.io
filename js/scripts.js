@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
     $('#contact-form').submit(function(evt){
         evt.preventDefault();
 
-        $.ajax('/contact/contact.php',{
+        $.ajax('http://nverino.com/contact/contact.php',{
            method: 'POST',
            data: $(this).serialize()
         }).done(function(response){
